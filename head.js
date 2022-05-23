@@ -7,11 +7,10 @@ const assertEqual = function(actual, expected) {
 };
 
 const head = function(array) {
-  const value = array[0];
-  if (value === undefined || value.length === 0) {
-    return;
+  if (array.length === 0) {
+    return undefined;
   }
-  return value;
+  return array[0];
 };
 
 // TEST CODE
